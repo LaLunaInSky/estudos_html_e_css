@@ -32,3 +32,34 @@
     --font03: 'PassionOne Bold', sans-serif;
     --font04: 'PassionOne Black', sans-serif;
 }
+
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: var(--font03);
+}
+
+header h1 > span {
+    font-size: 1.4em;
+    font-family: var(--font02);
+    padding: 0px 3px;
+}
+
+header p {
+    font-size: 1.3em;
+    font-family: var(--font02);
+}
+
+section {
+    padding: 60px 20px;
+}
