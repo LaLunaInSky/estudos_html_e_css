@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+/*Represetação por Nomes*/
+h2#exemplo1 {
+    background-color: blue;
+    color: white;
+}
+
+/*Representaçãp por Hexadecimais
+Decimal: 0 1 2 3 4 5 6 7 8 9
+Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F*/
+h2#exemplo2 {
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+/*Representação por RGB*/
+h2#exemplo3 {
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+/*Representação por Matiz, saturação e luminosidade*/
+h2#exemplo4 {
+    background-color: hsl(240, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+h2#exemplo5 {
+    background-color: rgba(23, 209, 184, 0.322);
+    color: hsla(318, 100%, 55%, 0.425);
+}

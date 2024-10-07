@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+    Para font-size apenas use px ou em
+    16px geralmente igual à 1em
+    */
+    font-size: 1.02em ;
+}

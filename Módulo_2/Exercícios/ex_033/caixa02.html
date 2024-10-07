@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 15px 0px  15px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
+        }
+
+        nav {
+            background-color: rgb(44, 44, 44);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
+            border-radius: 5px 5px 0px 5px;
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: red;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px 15px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 0.01px 10px;
+            border-radius: 5px;
+            margin: 20px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
+        }
+
+        article > aside {
+            background-color: rgb(126, 126, 126);
+            padding: 2px 8px;
+            margin-bottom: 8px;
+            border-radius: 3px;
+            text-align: right;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8em;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.212);
+        }
+
+        article > aside > p {
+            margin: 0px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Esportes Política Tecnologia</h2>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus eligendi, saepe ad maxime, ea totam ex deserunt beatae iste quis nobis adipisci odio! Quos libero, eligendi minus reprehenderit voluptates molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore asperiores, nam tempore accusamus magni, ratione animi quam dolore sequi soluta facere, fugiat voluptas nesciunt corporis facilis dignissimos non enim esse.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoEmVídeo</p>
+    </footer>
+</body>
+</html>

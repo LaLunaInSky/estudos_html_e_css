@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'love larry';
+    src: url(./Fonts/love\ larry\ ttf.ttf);
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: 'love larry', 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2em;
+}

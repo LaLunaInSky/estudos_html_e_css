@@ -1,0 +1,16 @@
+* { /*configuração global CSS*/
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(
+        to bottom, #555DF7 10%, #9602F7 35%, #4602F7 65%, #025CF7 
+    );
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: white;
+}

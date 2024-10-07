@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Desafio 007</title>
+</head>
+<body>
+    <h1>Desafio Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Exprerimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F92F;</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1210px)" srcset="images/paisagem-m.png" type="image/png">
+        <img src="images/paisagem-g.png" alt="paisagem-g">
+    </picture>
+</body>
+</html>

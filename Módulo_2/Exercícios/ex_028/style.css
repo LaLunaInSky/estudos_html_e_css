@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*O peso da fonte é font-weight
+    Pesos:
+     lighter normal bold bolder
+    */
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2 {
+    color: indigo;
+    text-decoration: underline;
+    
+    /*font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: italic;*/
+
+    /*
+    ShortHand - vai uma mãozinha aí?
+        * font (condensa todas as conf de fonte aí em cima)
+        PORÉM possui uma ordem:
+        font-style -> font-weight -> font-size -> font-family
+
+        *LEMBRE DISSO, NO CSS NÃO PRECISA DA PORRA DA VÍRGULA PARA SEPARAR ARGUMENTOS MERDA*
+    */
+
+    font: italic bolder 2em 'Work Sans', sans-serif;
+}

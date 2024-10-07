@@ -1,0 +1,27 @@
+body {
+    font: normal 1em Arial, Verdana, sans-serif;
+}
+
+p {
+    text-indent: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p#left {
+    text-align: left;
+}
+
+p#right {
+    text-align: right;
+}
+
+p#center {
+    text-align: center;
+}
+
+p#justify {
+    text-align: justify;
+}
