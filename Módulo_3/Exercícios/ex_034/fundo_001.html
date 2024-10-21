@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 034</title>
+    <title>Ex 034 / Teste de Imagem de Fundo 01</title>
+    <style>
+        body {
+            background-image: url('../imagens_cap_19/wallpaper001.jpg');
+        }
+
+        div.quadrado {
+            display: inline-block;
+            background-color: lightgray;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {
+            background-image: url('../imagens_cap_19/pattern003.png');
+        }
+
+        div#q3:hover {
+            background-image: url('../imagens_cap_19/pattern001.png');
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
 </body>
 </html>
