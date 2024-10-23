@@ -72,3 +72,4 @@ function sectionMódulo(númeroDoMódulo, quantidadeDeDesafios, quantidadeDeExer
 }
 
 sectionMódulo(1, 9, 22)
+sectionMódulo(2, 3, 14)
