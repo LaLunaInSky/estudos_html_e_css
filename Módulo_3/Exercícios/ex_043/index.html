@@ -11,14 +11,22 @@
         
         body {
             height: 93vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('../imagens_ex_037_até_ex_042/wallpaper002.jpg');
             background-position: center center;
             background-repeat: repeat;
             background-size: cover; 
             /*O contain mostra a imagem sem cortes, 100% exibida
             O cover vai cobrir a viewport por completo, mesmo que precise picotar a imagem*/
-            background-attachment: fixed;
+            /*background-attachment: fixed;*/
+
+            /*shorthand do background
+                ordem para seguir:
+                color > image > position > repeat > [size (não funfa aqui!)] > attachment
+            */
+
+            background: black url('../imagens_ex_037_até_ex_042/wallpaper002.jpg') center center repeat fixed;
+            background-size: cover; /*funfa se colocar separado!*/
         }
 
         main {
