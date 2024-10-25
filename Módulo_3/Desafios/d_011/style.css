@@ -4,21 +4,15 @@
     margin: 0px;
 }
 
-main {
+#container {
     position: relative;
     height: 100vh;
-    width: 100vw;
-    background-image: url(images/espaco.jpg);
-    background-repeat: no-repeat;
+    background: black url('images/espaco.jpg') center center;
     background-size: cover;
-    background-position: center center;
 }
 
-main > img#astronauta {
-    max-width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition-duration: 0.5s;
+#conteudo {
+    height: 100vh;
+    background: transparent url('images/astronauta.png') no-repeat center center;
+    background-size: auto 70%;
 }
