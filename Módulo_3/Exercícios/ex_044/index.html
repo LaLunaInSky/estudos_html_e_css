@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 044 / Teste de Imagem de Fundo 08</title>
+    <style>
+        #container {
+            background: purple url('../imagens_ex_037_até_ex_044/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 95vh;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background: purple url('../imagens_ex_037_até_ex_044/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            /*Quando o position for absolute é possivel noemar duas variáveis
+            O left e o top!*/
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
-    
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
