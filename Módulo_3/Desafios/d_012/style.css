@@ -111,7 +111,7 @@ section {
     border-radius: 0px 15px 40% 0px;
     text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.377);
     padding: 40px;
-    width: 245px;
+    max-width: 285px;
 }
 
 footer {
