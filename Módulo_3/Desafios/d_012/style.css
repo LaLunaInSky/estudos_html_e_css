@@ -105,7 +105,7 @@ section {
     background-color: rgba(0, 0, 0, 0.301);
     margin: 0px 0px 0px -40px;
     border-radius: 0px 15px 40% 0px;
-    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.377);
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.377);
     padding: 40px;
     max-width: 285px;
 }
