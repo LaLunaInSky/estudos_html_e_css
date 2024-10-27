@@ -41,12 +41,13 @@ header {
 }
 
 header h1 {
-    font-size: 3.1em;
+    font-size: 3.6em;
     font-variant: small-caps;
 }
 
 header p {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-family: var(--font03);
 }
 
 header a {
@@ -100,7 +101,7 @@ section {
 footer {
     background-color: var(--color02);
     color: white;
-    font-size: 1.05em;
+    font-size: 1.1em;
     font-family: var(--font02);
     font-weight: normal;
     text-align: center;
@@ -120,6 +121,7 @@ footer a:hover {
 }
 
 #criação {
+    padding-top: 5px;
     font-family: var(--font03);
     font-style: italic;
     font-size: 0.9em;
