@@ -83,6 +83,7 @@ section {
     font-size: 1.4em;
     padding: 60px 40px;
     font-family: var(--font01);
+    line-height: 1.8em;
 }
 
 #estrofe2 {
