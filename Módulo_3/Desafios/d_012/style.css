@@ -74,26 +74,25 @@ section {
 }
 
 #estrofe2 {
-    background: black url('images/background001.jpg') right top no-repeat fixed;
+    background: black url('images/background001.jpg') center center no-repeat fixed;
     background-size: cover;
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.37);
     color: white;
-}
-
-#esrofe4 {
-    margin: -30px 0px 0px 0px;
 }
 
 #estrofe4 {
     background: black url('images/background002.jpg') center center no-repeat fixed;
     background-size: cover;
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.37);
     color: white;
+    margin: -30px 0px 0px 0px;
 }
 
 #estrofe2 p, #estrofe4 p {
     background-color: rgba(0, 0, 0, 0.301);
     margin: 0px 0px 0px -40px;
     border-radius: 0px 15px 40% 0px;
-    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.377);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.911);
     padding: 40px;
     max-width: 285px;
 }
