@@ -40,7 +40,8 @@
     margin: 0px;
 }
 
-body {
+html, body {
+    min-height: 100vh;
     background-color: var(--color01);
 }
 
@@ -52,14 +53,9 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.1em;
     font-family: var(--font03);
-}
-
-header h1 > span {
-    font-size: 1.4em;
-    font-family: var(--font02);
-    padding: 0px 3px;
+    font-variant: small-caps;
 }
 
 header p {
