@@ -12,25 +12,11 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'PassionOne Bold';
-    src: url(fonts/PassionOne-Bold.ttf);
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PassionOne Black';
-    src: url(fonts/PassionOne-Black.ttf);
-    font-weight: 900;
-    font-style: normal;
-}
 
 :root {
     --font01: 'Sriracha', system-ui;
     --font02: 'PassionOne Regeular', sans-serif;
-    --font03: 'PassionOne Bold', sans-serif;
-    --font04: 'PassionOne Black', sans-serif;
+    --font03: Verdana, Geneva, Tahoma, sans-serif;
 
     --color01: #FFF5DD;
     --color02: #805500;
@@ -42,25 +28,25 @@
 
 html, body {
     min-height: 100vh;
+    font-family: var(--font03);
     background-color: var(--color01);
 }
 
 header {
     background-color: black;
     padding: 40px;
+    font-family: var(--font02);
     color: white;
     text-align: center;
 }
 
 header h1 {
     font-size: 3.1em;
-    font-family: var(--font03);
     font-variant: small-caps;
 }
 
 header p {
     font-size: 1.3em;
-    font-family: var(--font02);
 }
 
 header a {
@@ -114,16 +100,17 @@ section {
 footer {
     background-color: var(--color02);
     color: white;
-    font-size: 1.1em;
+    font-size: 1.05em;
     font-family: var(--font02);
     font-weight: normal;
-    padding: 6px;
     text-align: center;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.274);
+    padding: 10px 0px 15px;
 }
 
 footer a {
-    font-family: var(--font03);
+    font-family: var(--font01);
+    font-weight: bold;
     color: white;
     text-decoration: none;
 }
@@ -131,15 +118,15 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 #criação {
-    margin: 8px 0px 1px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font03);
     font-style: italic;
     font-size: 0.9em;
 }
 
 #criação a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font03);
     font-weight: bolder;
     font-size: 1em;
 }
