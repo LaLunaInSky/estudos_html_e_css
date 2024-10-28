@@ -77,6 +77,7 @@ a:hover {
 }
 
 footer {
+    cursor: default;
     margin-top: 5vh;
     padding: 8px;
     text-align: center;
