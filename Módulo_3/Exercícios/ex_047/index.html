@@ -14,6 +14,7 @@
             margin: 40px auto 0px;
             width: 430px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -31,6 +32,12 @@
             background-color: rgb(49, 48, 48);
             color: white;
             border: 1px solid white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(49, 48, 48);
         }
 
         tbody > tr:nth-child(2n-1) {
