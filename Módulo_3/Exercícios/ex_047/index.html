@@ -11,9 +11,19 @@
         }
 
         table {
-            margin: auto;
-            width: 500px;
+            margin: 40px auto 0px;
             border-collapse: collapse;
+        }
+
+        caption {
+            color: white;
+            background-color: rgb(49, 48, 48);
+            width: 400px;
+            font-weight: bolder;
+            font-size: 1.1em;
+            margin: auto;
+            padding: 15px;
+            border-radius: 20px 20px 0px 0px;
         }
 
         thead, tfoot {
@@ -38,6 +48,7 @@
     <!--
         Anatomia Para Tabelas Grandes:
             - table
+                -Caption = legenda da tabela
                 -table head / thead
                     - tr, td, th
                 -table body / tbody
@@ -46,10 +57,11 @@
                     - tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 120px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -163,7 +175,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="number"><strong>212.583.750</strong></td>
         </tfoot>
     </table>
