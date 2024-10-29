@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 046 / Criação de Tabelas 02</title>
+    <style>
+        body {
+            cursor: default;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        
+        table {
+            margin: 80px auto;
+            text-align: left;
+            width: 400px;
+            border-collapse: collapse;
+        }
+        
+        #info > .colunaInfo {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .linhaInfo {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+            width: 30px;
+        }
+
+        #nada {
+            background-color: rgba(75, 75, 75, 0.507);
+            border-radius: 20px 0px 0px 0px;
+            border: 0px;
+        }
+
+        td {
+            border: 1.9px solid black;
+            padding: 8px;
+        }
+
+        .linhaInfo:hover {
+            background-color: gray;
+        }
+
+        td:hover {
+            background-color: rgba(128, 128, 128, 0.445);
+        }
+    </style>
+</head>
+<body>
+    <h1>Criação de Tabelas 02</h1>
+    <!--
+        HIERARQUIA De Tabelas (Simples):
+            -table (table)= tabela
+                -table row (<tr>)= linha da tabela
+                    -table header (th)= cabeçalho da tabela
+                    -table data (td)= dado da tabela
+    -->
+    <table>
+        <tr id="info">
+            <td id="nada"></td>
+            <td class="colunaInfo">A</td>
+            <td class="colunaInfo">B</td>
+            <td class="colunaInfo">C</td>
+        </tr>
+        <tr> <!--Primeira linha-->
+            <td class="linhaInfo">1</td>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!--Segunda linha-->
+            <td class="linhaInfo">2</td>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!--Terceira linha-->
+            <td class="linhaInfo">3</td>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--Quarta linha-->
+            <td class="linhaInfo">4</td>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
