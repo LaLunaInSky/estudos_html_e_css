@@ -45,13 +45,13 @@ function sectionMódulo(númeroDoMódulo, quantidadeDeDesafios, quantidadeDeExer
     for (desafiosTotal ;desafiosTotal != quantidadeDeDesafiosFinal; desafiosTotal += 1) {
         var liResultado = document.createElement('li')
         if (desafiosTotal <= 9) {
-            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/M%C3%B3dulo_${númeroDoMódulo}/Desafios/d_00${desafiosTotal}/" target="_blank">d_00${desafiosTotal}</a></h3>`
+            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/Estudos_Iniciais_Com_o_Curso_Em_Vídeo/M%C3%B3dulo_${númeroDoMódulo}/Desafios/d_00${desafiosTotal}/" target="_blank">d_00${desafiosTotal}</a></h3>`
             ulDesafios.appendChild(liResultado)
         } else if (desafiosTotal <= 99) {
-            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/M%C3%B3dulo_${númeroDoMódulo}/Desafios/d_0${desafiosTotal}/" target="_blank">d_0${desafiosTotal}</a></h3>`
+            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/Estudos_Iniciais_Com_o_Curso_Em_Vídeo/M%C3%B3dulo_${númeroDoMódulo}/Desafios/d_0${desafiosTotal}/" target="_blank">d_0${desafiosTotal}</a></h3>`
             ulDesafios.appendChild(liResultado)
         } else {
-            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/M%C3%B3dulo_${númeroDoMódulo}/Desafios/d_${desafiosTotal}/" target="_blank">d_${desafiosTotal}</a></h3>`
+            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/Estudos_Iniciais_Com_o_Curso_Em_Vídeo/M%C3%B3dulo_${númeroDoMódulo}/Desafios/d_${desafiosTotal}/" target="_blank">d_${desafiosTotal}</a></h3>`
             ulDesafios.appendChild(liResultado)
         }
     }
@@ -59,13 +59,13 @@ function sectionMódulo(númeroDoMódulo, quantidadeDeDesafios, quantidadeDeExer
     for (exercícosTotal ;exercícosTotal != quantidadeDeExercícosFinal; exercícosTotal += 1) {
         var liResultado = document.createElement('li')
         if (exercícosTotal <= 9) {
-            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/M%C3%B3dulo_${númeroDoMódulo}/Exercícios/ex_00${exercícosTotal}/" target="_blank">ex_00${exercícosTotal}</a></h3>`
+            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/Estudos_Iniciais_Com_o_Curso_Em_Vídeo/M%C3%B3dulo_${númeroDoMódulo}/Exercícios/ex_00${exercícosTotal}/" target="_blank">ex_00${exercícosTotal}</a></h3>`
             ulExercícios.appendChild(liResultado)
         } else if (exercícosTotal <= 99) { 
-            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/M%C3%B3dulo_${númeroDoMódulo}/Exercícios/ex_0${exercícosTotal}/" target="_blank">ex_0${exercícosTotal}</a></h3>`
+            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/Estudos_Iniciais_Com_o_Curso_Em_Vídeo/M%C3%B3dulo_${númeroDoMódulo}/Exercícios/ex_0${exercícosTotal}/" target="_blank">ex_0${exercícosTotal}</a></h3>`
             ulExercícios.appendChild(liResultado)
         } else {
-            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/M%C3%B3dulo_${númeroDoMódulo}/Exercícios/ex_${exercícosTotal}/" target="_blank">ex_${exercícosTotal}</a></h3>`
+            liResultado.innerHTML = `<h3><a href="https://lalunainsky.github.io/Estudos_HTML_e_CSS/Estudos_Iniciais_Com_o_Curso_Em_Vídeo/M%C3%B3dulo_${númeroDoMódulo}/Exercícios/ex_${exercícosTotal}/" target="_blank">ex_${exercícosTotal}</a></h3>`
             ulExercícios.appendChild(liResultado)
         }
     }
@@ -74,3 +74,4 @@ function sectionMódulo(númeroDoMódulo, quantidadeDeDesafios, quantidadeDeExer
 sectionMódulo(1, 9, 22)
 sectionMódulo(2, 1, 14)
 sectionMódulo(3, 5, 15)
+sectionMódulo(4, 0, 1)
