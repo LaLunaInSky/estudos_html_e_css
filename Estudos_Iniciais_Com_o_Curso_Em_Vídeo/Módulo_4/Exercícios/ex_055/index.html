@@ -7,5 +7,17 @@
     <title>Ex 055 | Iframe 004</title>
 </head>
 <body>
-    
+    <h1>Meu Site Principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur earum labore placeat veritatis sequi ratione aliquam debitis deleniti cupiditate, optio officia dolorum, iste, laudantium eaque architecto expedita magnam minima.</p>
+    <h2>Iframe segura!</h2>
+    <iframe src="página_extra.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer" width="350px" style="display: block; margin: auto;">
+        <!--Modo sandbox/sandbox bloqueia todo o dado que seria enviado pelo iframe
+        O modo referrerpolicy/no-referrer mantem ainda mais seguro o iframe-->
+        Seu navegador não da suporte a isso!
+    </iframe>
+    <h2>Iframe com sandbox liberada abaixo</h2>
+    <iframe src="página_extra.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer" width="350px" style="display: block; margin: auto;">
+        Seu navegador não da suporte a isso!
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore, a earum et quo assumenda, cumque possimus blanditiis facere recusandae dolorum necessitatibus provident animi sed, placeat amet? Vel, non et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit porro officia enim nihil, velit quas tempore sint in pariatur saepe ex dicta, ipsa ea quaerat odio necessitatibus autem blanditiis!</p>
 </html>
