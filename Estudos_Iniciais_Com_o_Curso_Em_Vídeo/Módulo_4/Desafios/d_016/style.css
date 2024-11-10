@@ -39,19 +39,18 @@ section#principal {
 }
 
 .menu > a > img {
+    border: 10px solid rgba(2, 2, 2, 0.336);
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.219);
     margin-bottom: 120px;
     border-radius: 50%;
+    transition-duration: 500ms;
 }
 
 .menu > a > img:hover {
     transform: translate(-20%, -10%);
     box-shadow: 15px 15px 50px 20px rgba(0, 0, 0, 0.452);
     border: 10px solid white;
-}
-
-.menu > a > img:not(:hover) {
-    border: 10px solid rgba(2, 2, 2, 0.336);
+    transition-duration: 500ms;
 }
 
 section > iframe {
