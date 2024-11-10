@@ -2,13 +2,13 @@ let logos = ['imagens/logo-home.jpg', 'imagens/logo-youtube.jpg', 'imagens/logo-
 let telas = ['imagens/tela-home.jpg', 'imagens/tela-youtube.jpg', 'imagens/tela-github.jpg', 'imagens/tela-instagram.jpg', 'imagens/tela-twitter.jpg', 'imagens/tela-facebook.jpg']
 
 function criaçãoBotões() {
-    let sectionMain = document.querySelector('section')
+    let articleMenu = document.querySelector('article.menu')
     for (item in logos) {
         let imgBotão = document.createElement('a')
         imgBotão.setAttribute('href', '#')
         imgBotão.setAttribute('target', '_self')
         imgBotão.innerHTML = `<img src="${logos[item]}" alt="">`
-        sectionMain.append(imgBotão)
+        articleMenu.append(imgBotão)
     }
 }
 
