@@ -23,6 +23,7 @@ section#principal {
 }
 
 #menuSec {
+    width: 10px;
     height: 100vh;
     display: flex;
     position: absolute;
@@ -54,6 +55,8 @@ section#principal {
 }
 
 section > iframe {
+    background: transparent url('imagens/tela-home.jpg') no-repeat;
+    background-size: cover;
     height: 478px;
     width: 270px;
     border-radius: 4px;
