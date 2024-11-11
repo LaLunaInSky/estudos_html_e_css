@@ -30,10 +30,8 @@ main {
 }
 
 #principal > iframe {
-    background: transparent url('imagens/tela-home.jpg') top center no-repeat;
-    background-size: cover;
-    height: 478px;
-    width: 270px;
+    height: 479px;
+    width: 271px;
     border-radius: 4px;
     box-shadow: inset 3px 3px 10px 1px rgba(0, 0, 0, 0.123);
     position: absolute;
