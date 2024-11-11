@@ -16,7 +16,7 @@ function criaçãoBotões() {
 function escolhaTela(num) {
     let item = Number(num)
     let iframeTela = document.querySelector('iframe')
-    iframeTela.style.background = `transparent url('${telas[item]}') no-repeat`;
+    iframeTela.style.background = `transparent url('${telas[item]}') top center no-repeat`;
     iframeTela.style.backgroundSize = 'cover';
 }
 
