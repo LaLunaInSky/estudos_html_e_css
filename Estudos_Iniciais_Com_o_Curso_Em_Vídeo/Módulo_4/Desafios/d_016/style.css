@@ -48,7 +48,7 @@ main {
     display: flex;
     position: absolute;
     top: -35%;
-    left: 65%;
+    left: 57%;
 }
 
 .menu {
@@ -61,6 +61,7 @@ main {
 
 .menu > a > img {
     border: 10px solid rgba(2, 2, 2, 0.336);
+    /*ou box-sizing: border-box;*/
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.219);
     margin-bottom: 120px;
     border-radius: 50%;
@@ -70,6 +71,6 @@ main {
 .menu > a > img:hover {
     transform: translate(-20%, -10%);
     box-shadow: 15px 15px 50px 20px rgba(0, 0, 0, 0.452);
-    border: 10px solid white;
+    border: 10px solid rgba(255, 255, 255, 0.76);
     transition-duration: 500ms;
 }
