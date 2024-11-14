@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <title>Ex 062 | Estudo de Formulário 05</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <fieldset>
+            <legend>
+                Gênero
+            </legend>
+            <input type="radio" name="genero" id="gmasc" value="masculino">
+            <label for="gmasc">Masculino</label>
+            <br>
+            <input type="radio" name="genero" id="gfem" value="feminino">
+            <label for="gfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Esportes Favoritos
+            </legend>
+            <input type="checkbox" name="espfut" id="espfut">
+            <label for="espfut">Futebol</label>
+            <br>
+            <input type="checkbox" name="esbas" id="esbas">
+            <label for="esbas">Basquete</label>
+            <br>
+            <input type="checkbox" name="esnat" id="esnat">
+            <label for="esnat">Natação</label>
+            <br>
+            <input type="checkbox" name="esten" id="esten">
+            <label for="esten">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
