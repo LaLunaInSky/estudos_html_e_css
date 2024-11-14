@@ -7,6 +7,32 @@
     <title>Ex 060 | Estudo de Formulário 03</title>
 </head>
 <body>
-    
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required maxlength="30" placeholder="Seu Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="media">Média:</label>
+            <input type="number" name="media" id="media" min="0" max="10" step="0.1" value="5" required>
+        </p>
+        <p>
+            <label for="mes">Período Letivo:</label>
+            <input type="month" name="mes" id="mes" value="2024-11">
+        </p>
+        <p>
+            <label for="dia">Dia da Prova:</label>
+            <input type="date" name="dia" id="dia" value="2024-11-14">
+        </p>
+        <p>
+            <label for="hora">Horário da Prova:</label>
+            <input type="time" name="hora" id="hora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
