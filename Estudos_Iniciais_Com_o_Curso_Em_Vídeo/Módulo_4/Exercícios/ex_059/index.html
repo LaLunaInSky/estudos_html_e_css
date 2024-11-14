@@ -7,6 +7,20 @@
     <title>Ex 059 | Estudo de Formulário 02</title>
 </head>
 <body>
-    
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="usuário">Usuário:</label>
+            <input type="text" name="usuário" id="usuário" required minlength="5" maxlength="15" size="5" placeholder="username" autocomplete="username">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" size="5" placeholder="password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
