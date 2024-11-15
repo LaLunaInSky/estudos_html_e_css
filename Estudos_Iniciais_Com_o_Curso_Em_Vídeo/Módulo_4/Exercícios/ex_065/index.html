@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <title>Ex 065 | Estudo de Formulário 08</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p>
+            <label for="num1">1º Número:</label>
+            <input type="number" name="num1" id="num1" min="0" max="100" required oninput="soma.innerHTML = `${Number(num1.value) + Number(num2.value)}`">
+        </p>
+
+        <p>
+            <label for="num2">2º Número:</label>
+            <input type="number" name="num2" id="num2" min="0" max="100" required oninput="soma.innerHTML = `${Number(num1.value) + Number(num2.value)}`">
+        </p>
+
+        <p>
+            <label for="soma">Soma:</label>
+            <output name="soma" id="soma">0</output>
+            <!--O output não envia dados ao cadastro.php, apenas serve para mostrar algo na tela momentaneo-->
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="soma.innerHTML = `${Number(0)}`">
+        </p>
+    </form>
+</body>
+</html>
