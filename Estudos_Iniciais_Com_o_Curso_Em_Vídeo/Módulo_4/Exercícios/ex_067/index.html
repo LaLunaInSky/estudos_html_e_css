@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <title>Ex 067 | Estudo de Formulário 10</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="anoNasc">Em que ano você nasceu?</label>
+            <input type="number" name="anoNasc" id="anoNasc" min="1949" required oninput="calcularIdade()">
+        </p>
+
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output name="idade" id="idade"></output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="idade.innerHTML = ''">
+        </p>
+    </form>
+
+    <script>
+        //setar limite máximo no ano atual!!!
+        let anoAtual = new Date().getFullYear()
+        let inputAnoNasc = document.querySelector('input#anoNasc')
+        inputAnoNasc.setAttribute('max', `${Number(anoAtual)}`)
+
+        function calcularIdade() {
+            let idadeUsuário = Number(anoAtual) - Number(inputAnoNasc.value)
+            idade.innerHTML = `${idadeUsuário} anos`
+        }
+    </script>
+</body>
+</html>
