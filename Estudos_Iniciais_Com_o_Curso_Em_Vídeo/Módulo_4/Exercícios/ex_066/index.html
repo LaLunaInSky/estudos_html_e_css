@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <title>Ex 066 | Estudo de Formulário 09</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="num">Número:</label>
+            <input type="range" name="num" id="num" required min="0" max="10" value="0" oninput="valor.innerHTML = Number(num.value)">
+            <output id="valor">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="valor.innerHTML = Number(0)">
+        </p>
+    </form>
+</body>
+</html>
