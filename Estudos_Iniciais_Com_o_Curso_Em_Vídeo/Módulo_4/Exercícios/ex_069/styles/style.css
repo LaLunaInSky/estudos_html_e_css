@@ -9,11 +9,11 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-size: contain;
     background-color: #233eff;
 }
 
 h1 {
+    text-align: center;
     color: white;
     padding: 10px;
     text-shadow: 2px 2px 0px black;

@@ -2,4 +2,5 @@
 
 body {
     background: url('../imagens/cev-landscape.jpg') left bottom no-repeat;
+    background-size: contain;
 }
