@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
 body {
-    background: url('../imagens/cev-portrait.jpg') center bottom;
+    background: url('../imagens/cev-portrait.jpg') center bottom no-repeat;
 }
