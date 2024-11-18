@@ -4,3 +4,8 @@ body {
     background: url('../imagens/cev-portrait.jpg') center bottom no-repeat;
     background-size: contain;
 }
+
+h1 {
+    padding: 50px;
+    font-size: 1.5em;
+}
