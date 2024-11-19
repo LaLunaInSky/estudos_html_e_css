@@ -23,7 +23,11 @@ nav {
     margin: 25px 0px -5px;
 }
 
-nav > a {
+nav > h2 {
+    display: none;
+}
+
+nav > section > a {
     color: lightgray;
     text-decoration: none;
     background-color: rgb(71, 71, 71);
@@ -46,4 +50,43 @@ main > p {
     text-indent: 20px;
     text-align: justify;
     margin: 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+        background-color: white;
+        height: 30px;
+        padding: 10px 0px 12px;
+        margin: 25px -15px -15px;
+    }
+
+    nav > h2 {
+        display: block;
+    }
+
+    nav > h2 > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    #a1 {
+        margin-top: 5px;
+    }
+
+    nav > section {
+        display: none;
+    }
+
+    nav > section > a {
+        font-size: 1.3em;
+        display: block;
+        padding: 15px;
+        margin: 0px -15px 0px;
+    }
+
+    nav > section > a:hover {
+        background-color: lightgray;
+        color: black;
+    }
 }

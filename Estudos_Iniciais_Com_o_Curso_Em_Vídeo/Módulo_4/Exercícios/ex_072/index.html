@@ -11,11 +11,14 @@
     <header>
         <h1>Meu Site</h1>
         <nav>
-            <a href="#" target="_self">Opção 1</a>
-            <a href="#" target="_self">Opção 2</a>
-            <a href="#" target="_self">Opção 3</a>
-            <a href="#" target="_self">Opção 4</a>
-            <a href="#" target="_self">Opção 5</a>
+            <h2><a href="#" target="_self" onclick="mostrarMenu()">☰</a></h2>
+            <section>
+                <a id="a1" href="#" target="_self">Opção 1</a>
+                <a href="#" target="_self">Opção 2</a>
+                <a href="#" target="_self">Opção 3</a>
+                <a href="#" target="_self">Opção 4</a>
+                <a href="#" target="_self">Opção 5</a>
+            </section>
         </nav>
     </header>
     <main>
@@ -24,5 +27,25 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit rem nisi est magnam aperiam ipsum quos! Facere accusantium ipsa fugit! Libero nobis quidem vel quos ipsam sequi qui magnam provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis accusamus quo rerum! Architecto omnis assumenda molestiae maxime, unde modi iusto animi corporis reprehenderit vero voluptatem repellendus, odit nam beatae?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi exercitationem rerum possimus neque omnis sint cumque sit enim eligendi nam debitis veniam sed itaque necessitatibus dolores, maiores est, temporibus ab! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, harum! Eveniet tenetur quibusdam, molestias architecto nobis, provident ullam ipsa quia perferendis vero accusamus quidem quas debitis corrupti esse culpa iure! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quibusdam natus ipsa fugit, sequi itaque, molestiae sed rem aut ratione et eligendi qui placeat in, velit sit dolor hic totam.</p>
     </main>
+
+    <script>
+        let navH2 = document.querySelector('nav>h2')
+        let navSectionMenu = document.querySelector('nav>section')
+        
+        if (navH2.style.display == 'none') {
+            navH2.innerHTML = '<a href="#" target="_self" onclick="mostrarMenu()">☰</a>'
+            navSectionMenu.style.display = 'none';
+        }
+
+        function mostrarMenu() {
+            navH2.innerHTML = '<a href="#" target="_self" onclick="esconderMenu()">╳</a>'
+            navSectionMenu.style.display = 'block';
+        }
+
+        function esconderMenu() {
+            navH2.innerHTML = '<a href="#" target="_self" onclick="mostrarMenu()">☰</a>'
+            navSectionMenu.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
