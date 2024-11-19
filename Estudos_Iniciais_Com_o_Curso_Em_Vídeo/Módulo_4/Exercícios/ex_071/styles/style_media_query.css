@@ -10,17 +10,68 @@ Grandes telas: acima de 1200px
 */
 
 @media print {
-    
+    body {
+        background-image: url(../images/back-print.jpg); /*não aparece em impressão!*/
+    }
+
+    main {
+        box-shadow: none;
+        border: 3px solid black;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        font-size: 2.3em;
+    }
+
+    #smartphone {
+        display: none;
+    }
+
+    #impressora {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    #smartphone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    #smartphone {
+        display: none;
+    }
+
+    #computador {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    #smartphone {
+        display: none;
+    }
+
+    #smartTv {
+        display: block;
+    }
 }
