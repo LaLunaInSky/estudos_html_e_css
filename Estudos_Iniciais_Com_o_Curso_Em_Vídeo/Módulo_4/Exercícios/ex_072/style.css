@@ -43,5 +43,7 @@ main > h2 {
 }
 
 main > p {
+    text-indent: 20px;
+    text-align: justify;
     margin: 20px 0px;
 }
