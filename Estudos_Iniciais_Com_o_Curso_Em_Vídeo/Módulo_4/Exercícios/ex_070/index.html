@@ -26,19 +26,23 @@
             padding: 10px;
         }
         /*declarações modo retrato*/
-        body {
-            background: url(imagens/cev-portrait.jpg) center bottom no-repeat;
-            background-size: contain;
-        }
+        @media screen and (orientation: portrait) {
+            body {
+                background: url(imagens/cev-portrait.jpg) center bottom no-repeat;
+                background-size: contain;
+            }
 
-        h1 {
-            padding: 50px;
-            font-size: 1.5em;
+            h1 {
+                padding: 50px;
+                font-size: 1.5em;
+            }
         }
         /*declarações modo paisagem*/
-        body {
-            background: url(imagens/cev-landscape.jpg) left bottom no-repeat;
-            background-size: contain;
+        @media screen and (orientation: landscape) {
+            body {
+                background: url(imagens/cev-landscape.jpg) left bottom no-repeat;
+                background-size: contain;
+            }
         }
     </style>
 </head>
