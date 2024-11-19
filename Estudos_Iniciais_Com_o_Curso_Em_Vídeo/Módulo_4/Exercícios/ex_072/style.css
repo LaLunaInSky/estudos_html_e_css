@@ -24,7 +24,7 @@ nav {
 }
 
 nav > a {
-    color: white;
+    color: lightgray;
     text-decoration: none;
     background-color: rgb(71, 71, 71);
     padding: 10px;
