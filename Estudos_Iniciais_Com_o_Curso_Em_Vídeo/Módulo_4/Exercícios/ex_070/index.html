@@ -4,47 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Ex 070 | Estudo de Media Query 03</title>
-    <style>
-        /*declarações gerais*/
-        *{
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        html, body {
-            width: 100vw;
-            height: 100vh;
-            background-color: #233eff;
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px 0px black;
-            padding: 10px;
-        }
-        /*declarações modo retrato*/
-        @media screen and (orientation: portrait) {
-            body {
-                background: url(imagens/cev-portrait.jpg) center bottom no-repeat;
-                background-size: contain;
-            }
-
-            h1 {
-                padding: 50px;
-                font-size: 1.5em;
-            }
-        }
-        /*declarações modo paisagem*/
-        @media screen and (orientation: landscape) {
-            body {
-                background: url(imagens/cev-landscape.jpg) left bottom no-repeat;
-                background-size: contain;
-            }
-        }
-    </style>
 </head>
 <body>
     <h1>Mude a oritentação do seu dispositivo</h1>
