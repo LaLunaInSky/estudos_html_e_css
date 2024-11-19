@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    cursor: default;
     background-color: rgb(148, 146, 146);
     text-align: center;
     padding: 15px;
@@ -23,7 +24,7 @@ nav {
     margin: 25px 0px -5px;
 }
 
-nav > h2 {
+nav > a > h2 {
     display: none;
 }
 
@@ -34,9 +35,15 @@ nav > section > a {
     padding: 10px;
 }
 
+nav > section > a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
 main {
+    cursor: default;
     max-width: 800px;
-    margin: 10px auto 0px;
+    margin: 10px auto 20px;
     padding: 15px;
     border-radius: 15px;
     background-color: white;
@@ -53,25 +60,26 @@ main > p {
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        position: relative;
+    nav > a > h2 {
         background-color: white;
+        display: block;
         height: 30px;
         padding: 10px 0px 12px;
         margin: 25px -15px -15px;
     }
 
-    nav > h2 {
-        display: block;
-    }
-
-    nav > h2 > a {
+    nav > a {
+        position: relative;
         color: black;
         text-decoration: none;
     }
 
     #a1 {
-        margin-top: 5px;
+        margin-top: 15px;
+    }
+
+    #a5 {
+        margin-bottom: -15px;
     }
 
     nav > section {
@@ -88,5 +96,13 @@ main > p {
     nav > section > a:hover {
         background-color: lightgray;
         color: black;
+    }
+
+    main > p {
+        font-size: 1.25em;
+    }
+
+    main > h2 {
+        font-size: 1.6em;
     }
 }

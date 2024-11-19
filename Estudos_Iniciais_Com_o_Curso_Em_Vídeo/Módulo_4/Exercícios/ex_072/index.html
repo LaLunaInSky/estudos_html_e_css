@@ -11,13 +11,13 @@
     <header>
         <h1>Meu Site</h1>
         <nav>
-            <h2><a href="#" target="_self" onclick="mostrarMenu()">☰</a></h2>
+            <a href="#" target="_self" onclick="mostrarMenu()"><h2>☰</h2></a>
             <section>
                 <a id="a1" href="#" target="_self">Opção 1</a>
                 <a href="#" target="_self">Opção 2</a>
                 <a href="#" target="_self">Opção 3</a>
                 <a href="#" target="_self">Opção 4</a>
-                <a href="#" target="_self">Opção 5</a>
+                <a id="a5" href="#" target="_self">Opção 5</a>
             </section>
         </nav>
     </header>
@@ -29,21 +29,18 @@
     </main>
 
     <script>
-        let navH2 = document.querySelector('nav>h2')
+        let navA = document.querySelector('nav>a')
         let navSectionMenu = document.querySelector('nav>section')
-        
-        if (navH2.style.display == 'none') {
-            navH2.innerHTML = '<a href="#" target="_self" onclick="mostrarMenu()">☰</a>'
-            navSectionMenu.style.display = 'none';
-        }
 
         function mostrarMenu() {
-            navH2.innerHTML = '<a href="#" target="_self" onclick="esconderMenu()">╳</a>'
+            navA.innerHTML = '<h2>╳</h2>'
+            navA.setAttribute('onclick', 'esconderMenu()')
             navSectionMenu.style.display = 'block';
         }
 
         function esconderMenu() {
-            navH2.innerHTML = '<a href="#" target="_self" onclick="mostrarMenu()">☰</a>'
+            navA.innerHTML = '<h2>☰</h2>'
+            navA.setAttribute('onclick', 'mostrarMenu()')
             navSectionMenu.style.display = 'none';
         }
     </script>
