@@ -36,6 +36,7 @@ main > section#fotoMetal {
 }
 
 #fotoMetal > h1 {
+    cursor: default;
     position: absolute;
     top: 50%;
     left: 50%;
