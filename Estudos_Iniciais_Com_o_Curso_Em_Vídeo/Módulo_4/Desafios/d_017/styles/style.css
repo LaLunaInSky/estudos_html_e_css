@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/*min-450px*/
-
 * {
     margin: 0px;
     padding: 0px;
@@ -24,27 +22,37 @@ main {
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.219);
-    width: 50vw;
+    width: 80vw;
     padding: 10px;
 }
 
 main > section#fotoMetal {
+    position: relative;
     background: url(../images/metal.jpg) left bottom no-repeat;
     background-size: cover;
-    margin: -10px -10px 0px;
+    margin: -10px -10px 20px;
     border-radius: 10px 10px 0px 0px;
     height: 25vh;
 }
 
-main > h1 {
-    text-align: center;
-    padding: 15px 0px;
+#fotoMetal > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3em;
+    color: #23ada6;
+    background-color: rgba(255, 255, 255, 0.582);
+    padding: 20px;
+    border-radius: 15px;
+    text-shadow: 3px 3px 3px black;
 }
 
 main > p {
     font-size: 1.1em;
     text-align: center;
-    margin: 0px 5px;
+    margin: 0px 5px 20px;
 }
 
 .secEmail, .secSenha {
@@ -74,7 +82,7 @@ main > p {
     border-radius: 10px;
     border: 6px solid indigo;
     padding: 10px;
-    width: 31vw;
+    width: 60vw;
     margin: 3px;
 }
 
@@ -89,7 +97,7 @@ main > p {
     background-color: #50AAA1;
     border-radius: 10px;
     color: white;
-    width: 50vw;
+    width: 80vw;
     font-size: 1.1em;
     padding: 10px;
     margin: 5px 0px;
@@ -108,29 +116,4 @@ main > p {
 .secBotões > input:nth-last-child(1):hover {
     background-color: #133d39;
     color: white;
-}
-
-
-/*min-550*/
-
-@media screen and (min-height: 550px) {
-    .secEmail > input, .secSenha > input {
-        width: 35vw;
-    }
-}
-
-/*min-650*/
-
-@media screen and (min-height: 650px) {
-    .secEmail > input, .secSenha > input {
-        width: 37vw;
-    }
-}
-
-/*min-750*/
-
-@media screen and (min-height: 750px) {
-    .secEmail > input, .secSenha > input {
-        width: 39vw;
-    }
 }
