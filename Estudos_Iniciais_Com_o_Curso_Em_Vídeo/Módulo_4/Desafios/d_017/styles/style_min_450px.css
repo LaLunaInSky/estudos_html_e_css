@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*max-460px*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,9 +23,17 @@ main {
 
     background-color: white;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 1px black;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.219);
     width: 50vw;
     padding: 10px;
+}
+
+main > section#fotoMetal {
+    background: url(../images/metal.jpg) left bottom no-repeat;
+    background-size: cover;
+    margin: -10px -10px 0px;
+    border-radius: 10px 10px 0px 0px;
+    height: 25vh;
 }
 
 main > h1 {
@@ -44,15 +54,15 @@ main > p {
 }
 
 .secEmail > label, .secSenha > label {
-    background-color: darkmagenta;
-    border: 1px solid darkmagenta;
+    background-color: indigo;
+    border: 1px solid indigo;
     border-radius: 10px 0px 0px 10px;
     padding: 20px 5px 16px;
     margin-right: -12px;
 }
 
 .secEmail img, .secSenha img {
-    background-color: darkmagenta;
+    background-color: indigo;
     padding: 5px;
     margin-bottom: -14px;
     cursor: pointer;
@@ -62,7 +72,7 @@ main > p {
     font-size: 1.2em;
     background-color: #91CFC8;
     border-radius: 10px;
-    border: 6px solid darkmagenta;
+    border: 6px solid indigo;
     padding: 10px;
     width: 30vw;
     margin: 3px;
@@ -80,7 +90,7 @@ main > p {
     border-radius: 10px;
     color: white;
     width: 50vw;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 10px;
     margin: 5px 0px;
 }
