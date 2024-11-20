@@ -29,14 +29,16 @@
     </main>
 
     <script>
-        let widthWindow = window.matchMedia("(min-width: 760px)")
+        let widthWindow = window.matchMedia("(min-width: 769px)")
         let navA = document.querySelector('nav>a')
         let navSectionMenu = document.querySelector('nav>section')
 
         function analisadorTamanhoTela(widthWindow) {
             if (widthWindow.matches) {
+                navSectionMenu.style.display = 'block';
+            } else {
                 esconderMenu()
-            } 
+            }
         }
 
         function mostrarMenu() {
