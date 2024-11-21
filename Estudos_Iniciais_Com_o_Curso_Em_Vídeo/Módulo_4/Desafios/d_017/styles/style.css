@@ -6,11 +6,22 @@
 }
 
 html, body {
+    position: relative;
     background-color: #5D2C80;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
     width: 100vw;
     height: 100vh;
+    transition-duration: 1000ms;
+}
+
+article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: transparent;
+    transition-duration: 1000ms;
 }
 
 main {
@@ -24,36 +35,31 @@ main {
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.219);
     width: 80vw;
     padding: 10px;
+    transition-duration: 1000ms;
 }
 
-main > section#fotoMetal {
-    position: relative;
+main > section.fotoMetal {
     background: url(../images/metal.jpg) left bottom no-repeat;
     background-size: cover;
-    margin: -10px -10px 20px;
-    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px;
+    border-radius: 20px 20px 0px 0px;
     height: 25vh;
+    transition-duration: 1000ms;
 }
 
-#fotoMetal > h1 {
+main > h1 {
     cursor: default;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-size: 3em;
-    color: white;
-    background-color: rgba(17, 2, 41, 0.301);
-    padding: 20px;
-    border-radius: 15px;
-    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    font-size: 2.6em;
+    padding: 15px;
+    transition-duration: 1000ms;
 }
 
 main > p {
     font-size: 1.1em;
     text-align: center;
     margin: 0px 5px 20px;
+    transition-duration: 1000ms;
 }
 
 .secEmail, .secSenha {
@@ -68,6 +74,7 @@ main > p {
     border-radius: 10px 0px 0px 10px;
     padding: 20px 5px 16px;
     margin-right: -12px;
+    transition-duration: 1000ms;
 }
 
 .secEmail img, .secSenha img {
@@ -75,6 +82,7 @@ main > p {
     padding: 5px;
     margin-bottom: -14px;
     cursor: pointer;
+    transition-duration: 1000ms;
 }
 
 .secEmail > input, .secSenha > input {
@@ -85,11 +93,13 @@ main > p {
     padding: 10px;
     width: 60vw;
     margin: 3px;
+    transition-duration: 1000ms;
 }
 
 .secEmail > input:focus, .secSenha > input:focus {
     background-color: white;
     border: 6px solid darkmagenta;
+    transition-duration: 1000ms;
 }
 
 .secBotões > input {
@@ -102,41 +112,147 @@ main > p {
     font-size: 1.1em;
     padding: 10px;
     margin: 5px 0px;
+    transition-duration: 1000ms;
 }
 
 .secBotões > input:nth-last-child(3):hover {
     background-color: #133d39;
+    transition-duration: 500ms;
 }
 
 .secBotões > input:nth-last-child(1) {
     background-color: white;
     border: 2px solid #50AAA1;
     color: #306b65;
+    transition-duration: 1000ms;
 }
 
 .secBotões > input:nth-last-child(1):hover {
     background-color: #133d39;
     color: white;
+    transition-duration: 500ms;
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
     main {
         width: 60vw;
+        transition-duration: 1000ms;
     }
 
-    #fotoMetal > h1 {
+    main > h1 {
         font-size: 2.5em;
+        transition-duration: 1000ms;
     }
 
     main > p {
         text-align: justify;
+        transition-duration: 1000ms;
     }
 
     .secEmail > input, .secSenha > input {
         width: 46vw;
+        transition-duration: 1000ms;
     }
 
     .secBotões > input  {
         width: 60vw;
+        transition-duration: 1000ms;
+    }
+}
+
+@media screen and (min-width:768px) {
+    html, body {
+        background-image: linear-gradient(#5D2C80,#4B969B);
+    }
+
+    article {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.219);
+        width: 600px;
+        height: 400px;
+        padding: 10px;
+        transition-duration: 1000ms;
+    }
+
+    article > section {
+        background: url(../images/metal.jpg) left bottom no-repeat;
+        background-size: cover;
+        height: 420px;
+        margin: -10px -10px;
+        width: 230px;
+    }
+
+    #fotoM1 {
+        position: absolute;
+        left: 64.5%;
+        border-radius: 0px 20px 20px 0px;
+        transition-duration: 1000ms
+    }
+
+    #fotoM2 {
+        display: none;
+        transition-duration: 1000ms
+    }
+
+    main {
+        top: 50%;
+        left: 32%;
+        transform: translate(-50% , -50%);
+
+        background-color: transparent;
+        box-shadow: none;
+        transition-duration: 400ms;
+        padding: 15px;
+        width: 400px;
+    }
+
+    main > .fotoMetal {
+        display: none;
+    }
+
+
+    main > h1 {
+        margin-top: -15px;
+        font-size: 2.6em;
+    }
+
+    main > p {
+        margin: 0px 20px 15px;
+    }
+
+    .secEmail > input, .secSenha > input {
+        width: 270px;
+    }
+
+    .secBotões {
+        text-align: center;
+    }
+
+    .secBotões > input  {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        top: 50%;
+        left: 68%;
+        transform: translate(-50% , -50%);
+
+        background-color: transparent;
+        box-shadow: none;
+        transition-duration: 400ms;
+    }
+
+    #fotoM1 {
+        display: none;
+        transition-duration: 1000ms
+    }
+
+    #fotoM2 {
+        display: block;
+        border-radius: 20px 0px 0px 20px;
+        transition-duration: 1000ms
     }
 }
