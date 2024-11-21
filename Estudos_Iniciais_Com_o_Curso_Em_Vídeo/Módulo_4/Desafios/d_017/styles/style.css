@@ -118,3 +118,29 @@ main > p {
     background-color: #133d39;
     color: white;
 }
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    html, body {
+        background-color: black;
+    }
+
+    main {
+        width: 60vw;
+    }
+
+    #fotoMetal > h1 {
+        font-size: 2.5em;
+    }
+
+    main > p {
+        text-align: justify;
+    }
+
+    .secEmail > input, .secSenha > input {
+        width: 46vw;
+    }
+
+    .secBotões > input  {
+        width: 60vw;
+    }
+}
