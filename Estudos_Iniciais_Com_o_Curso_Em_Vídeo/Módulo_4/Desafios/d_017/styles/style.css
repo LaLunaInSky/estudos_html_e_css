@@ -6,7 +6,8 @@
 }
 
 :root {
-    --cor01: rgb(132, 3, 207);
+    --cor01: #5F2E83;
+    --cor02: #4B989B;
 }
 
 html , body {
@@ -25,12 +26,13 @@ main {
 
     background-color: white;
     width: 70vw;
+    height: 60vh;
     padding: 20px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.301);
 
-    height: 60vh;
+    transition: width 500ms;
 }
 
 #imagem {
@@ -55,25 +57,37 @@ main {
 @media screen and (min-width: 600px) and (max-width: 768px){
     main {
         width: 60vw;
+
+        transition: width 500ms;
     }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+    html, body {
+        background-image: linear-gradient(var(--cor01), var(--cor02));
+    }
+    
     main {
         width: 70vw;
+
+        transition: width 500ms;
     }
 
     #imagem {
         float: left;
         width: 40%;
         height: 110%;
+
+        transition: float 500ms, width 500ms;
     }
 
     #login {
         float: right;
         width: 60%;
         height: 100%;
+
+        transition: float 500ms, width 500ms;
     }
 
     #login > h1 {
@@ -83,20 +97,30 @@ main {
 
 
 @media screen and (min-width: 992px) {
+    html, body {
+        background-image: linear-gradient(var(--cor01), var(--cor02));
+    }
+    
     main {
         width: 60vw;
+
+        transition: width 500ms;
     }
 
     #imagem {
         float: right;
         width: 40%;
         height: 110%;
+
+        transition: float 500ms, width 500ms;
     }
 
     #login {
         float: left;
         width: 60%;
         height: 100%;
+
+        transition: float 500ms, width 500ms;
     }
 
     #login > h1 {
