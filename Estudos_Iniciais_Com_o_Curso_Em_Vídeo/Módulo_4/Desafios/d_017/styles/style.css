@@ -9,6 +9,7 @@
     --cor01: #5F2c82;
     --cor02: #49a09d;
     --cor03: #94CFCD;
+    --cor04: #034643;
 }
 
 html , body {
@@ -27,7 +28,7 @@ main {
 
     background-color: white;
     width: 70vw;
-    height: 60vh;
+    height: 67vh;
     padding: 20px;
     border-radius: 15px;
     overflow: hidden;
@@ -88,10 +89,44 @@ main {
     border-radius: 5px;
     font-size: 1.1em;
     padding: 10px;
+    color: var(--cor04);
 }
 
 .secEmail > input:focus, .secSenha > input:focus {
     background-color: white;
+    color: black;
+}
+
+.secBotões > input {
+    font-size: 1.2em;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.secBotões > input:nth-child(1) {
+    background-color: var(--cor02);
+    color: white;
+    text-shadow: 1.5px 1.5px 2px var(--cor04);
+}
+
+.secBotões > input:nth-child(1):hover {
+    background-color: var(--cor04);
+    text-shadow: none;
+}
+
+.secBotões > input:nth-last-child(1) {
+    color: var(--cor04);
+    border: 2px solid var(--cor02);
+}
+
+.secBotões > input:nth-last-child(1):hover {
+    background-color: var(--cor02);
+    color: white;
+    text-shadow: 1.5px 1.5px 2px var(--cor04);
+    border: 2px solid var(--cor04);
 }
 
 
