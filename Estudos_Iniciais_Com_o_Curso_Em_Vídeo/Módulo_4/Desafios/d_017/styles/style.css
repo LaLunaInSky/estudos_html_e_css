@@ -33,6 +33,7 @@ main {
     box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.301);
 
     transition: width 500ms;
+    transition-timing-function: ease;
 }
 
 #imagem {
@@ -49,8 +50,13 @@ main {
 }
 
 #login > h1 {
+    cursor: default;
     margin-bottom: 10px;
     font-size: 1.8em;
+}
+
+#login > p {
+    cursor: default;
 }
 
 
@@ -59,6 +65,7 @@ main {
         width: 60vw;
 
         transition: width 500ms;
+        transition-timing-function: ease;
     }
 }
 
@@ -72,6 +79,7 @@ main {
         width: 70vw;
 
         transition: width 500ms;
+        transition-timing-function: ease;
     }
 
     #imagem {
@@ -80,6 +88,7 @@ main {
         height: 110%;
 
         transition: float 500ms, width 500ms;
+        transition-timing-function: ease;
     }
 
     #login {
@@ -88,6 +97,7 @@ main {
         height: 100%;
 
         transition: float 500ms, width 500ms;
+        transition-timing-function: ease;
     }
 
     #login > h1 {
@@ -105,6 +115,7 @@ main {
         width: 60vw;
 
         transition: width 500ms;
+        transition-timing-function: ease;
     }
 
     #imagem {
@@ -113,6 +124,7 @@ main {
         height: 110%;
 
         transition: float 500ms, width 500ms;
+        transition-timing-function: ease;
     }
 
     #login {
@@ -121,6 +133,7 @@ main {
         height: 100%;
 
         transition: float 500ms, width 500ms;
+        transition-timing-function: ease;
     }
 
     #login > h1 {
