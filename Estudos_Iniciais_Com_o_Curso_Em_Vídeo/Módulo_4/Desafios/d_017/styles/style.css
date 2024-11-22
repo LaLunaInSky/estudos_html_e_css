@@ -103,7 +103,7 @@ main {
     }
 
     #login > h1 {
-        margin: 15px 0px 20px;
+        margin: 15px;
     }
 }
 
@@ -140,6 +140,6 @@ main {
     }
 
     #login > h1 {
-        margin: 15px 0px 20px;
+        margin: 15px;
     }
 }
