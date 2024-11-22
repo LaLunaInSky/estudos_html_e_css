@@ -8,6 +8,7 @@
 :root {
     --cor01: #5F2c82;
     --cor02: #49a09d;
+    --cor03: #94CFCD;
 }
 
 html , body {
@@ -58,6 +59,39 @@ main {
 #login > p {
     text-align: center;
     cursor: default;
+}
+
+.secEmail, .secSenha {
+    margin: 15px 0px;
+    padding: 5px;
+    background-color: var(--cor01);
+    border-radius: 10px;
+}
+
+.secEmail > label, .secEmail > input, .secSenha > label, .secSenha > input {
+    display: block;
+} 
+
+.secEmail > label, .secSenha > label {
+    float: left;
+}
+
+.secEmail > label > img, .secSenha > label > img {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.secEmail > input, .secSenha > input {
+    width: 76%;
+    background-color: var(--cor03);
+    border: 0px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.secEmail > input:focus, .secSenha > input:focus {
+    background-color: white;
 }
 
 
