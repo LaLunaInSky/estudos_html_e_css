@@ -43,6 +43,9 @@ main {
     background-size: cover;
     margin: -20px -20px -0px;
     height: 24vh;
+
+    transition: height 500ms;
+    transition-timing-function: ease;
 }
 
 #login {
@@ -136,6 +139,18 @@ main {
         transition: width 500ms;
         transition-timing-function: ease;
     }
+
+    #imagem {
+        transition: height 500ms;
+        transition-timing-function: ease;
+    }
+
+    .secEmail > input, .secSenha > input {
+        width: 80%;
+
+        transition: width 500ms;
+        transition-timing-function: ease;
+    }
 }
 
 
@@ -154,11 +169,11 @@ main {
     #imagem {
         float: left;
         width: 40%;
-        height: 58vh;
+        height: 450px;
 
         margin: -20px;
 
-        transition: float 500ms, width 500ms;
+        transition: float 500ms, width 500ms, height 170ms;
         transition-timing-function: ease;
     }
 
@@ -179,6 +194,10 @@ main {
         font-size: 1.05em;
         margin-bottom: 20px;
     }
+
+    .secEmail > input, .secSenha > input {
+        width: 76%;
+    }
 }
 
 
@@ -197,12 +216,12 @@ main {
     #imagem {
         float: right;
         width: 40%;
-        height: 58vh;
+        height: 450px;
 
         margin: -20px;
 
-        transition: float 500ms, width 500ms;
-        transition-timing-function: ease;
+        transition: float 500ms, width 500ms, height 170ms;
+        transition-timing-function: ease-in-out;
     }
 
     #login {
@@ -222,5 +241,8 @@ main {
         font-size: 1.1em;
         margin-bottom: 20px;
 
+    }
+    .secEmail > input, .secSenha > input {
+        width: 79%;
     }
 }
