@@ -28,7 +28,6 @@ main {
 
     background-color: white;
     width: 70vw;
-    height: 67vh;
     padding: 20px;
     border-radius: 15px;
     overflow: hidden;
@@ -155,7 +154,7 @@ main {
     #imagem {
         float: left;
         width: 40%;
-        height: 150%;
+        height: 58vh;
 
         margin: -20px;
 
@@ -173,6 +172,12 @@ main {
 
     #login > h1 {
         margin: 15px;
+        font-size: 2em;
+    }
+
+    #login > p {
+        font-size: 1.05em;
+        margin-bottom: 20px;
     }
 }
 
@@ -192,7 +197,7 @@ main {
     #imagem {
         float: right;
         width: 40%;
-        height: 150%;
+        height: 58vh;
 
         margin: -20px;
 
@@ -210,5 +215,12 @@ main {
 
     #login > h1 {
         margin: 15px;
+        font-size: 2em;
+    }
+
+    #login > p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+
     }
 }
