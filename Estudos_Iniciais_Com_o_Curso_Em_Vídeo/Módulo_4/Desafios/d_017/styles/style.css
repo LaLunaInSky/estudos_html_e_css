@@ -40,7 +40,7 @@ main {
     display: block;
     background: url(../images/metal.jpg) left bottom no-repeat;
     background-size: cover;
-    margin: -20px -20px 10px;
+    margin: -20px -20px -0px;
     height: 24vh;
 }
 
@@ -51,7 +51,7 @@ main {
 
 #login > h1 {
     cursor: default;
-    margin-bottom: 10px;
+    margin: 10px;
     font-size: 1.8em;
 }
 
@@ -85,7 +85,9 @@ main {
     #imagem {
         float: left;
         width: 40%;
-        height: 110%;
+        height: 150%;
+
+        margin: -20px;
 
         transition: float 500ms, width 500ms;
         transition-timing-function: ease;
@@ -94,7 +96,6 @@ main {
     #login {
         float: right;
         width: 60%;
-        height: 100%;
 
         transition: float 500ms, width 500ms;
         transition-timing-function: ease;
@@ -121,7 +122,9 @@ main {
     #imagem {
         float: right;
         width: 40%;
-        height: 110%;
+        height: 150%;
+
+        margin: -20px;
 
         transition: float 500ms, width 500ms;
         transition-timing-function: ease;
@@ -130,7 +133,6 @@ main {
     #login {
         float: left;
         width: 60%;
-        height: 100%;
 
         transition: float 500ms, width 500ms;
         transition-timing-function: ease;
