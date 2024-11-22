@@ -183,7 +183,6 @@ main > p {
 
         background-color: transparent;
         box-shadow: none;
-        transition-duration: 400ms;
         padding: 15px;
         width: 400px;
     }
