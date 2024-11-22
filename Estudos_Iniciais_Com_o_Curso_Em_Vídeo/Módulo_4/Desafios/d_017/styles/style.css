@@ -46,16 +46,17 @@ main {
 
 #login {
     display: block;
-    text-align: center;
 }
 
 #login > h1 {
+    text-align: center;
     cursor: default;
     margin: 10px;
     font-size: 1.8em;
 }
 
 #login > p {
+    text-align: center;
     cursor: default;
 }
 
