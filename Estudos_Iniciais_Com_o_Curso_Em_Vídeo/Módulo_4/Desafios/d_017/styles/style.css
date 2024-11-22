@@ -58,7 +58,7 @@ main > p {
 
 .secEmail, .secSenha {
     background-color: indigo;
-    width: 78vw;
+    width: 80vw;
     text-align: center;
     border-radius: 15px;
     margin: 10px auto;
@@ -79,7 +79,7 @@ main > p {
 .secEmail > input, .secSenha > input {
     border: 0px;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background-color: #91CFC8;
     padding: 10px;
     width: 60vw;
@@ -132,7 +132,7 @@ main > p {
     }
     
     .secEmail, .secSenha {
-        width: 58vw;
+        width: 60vw;
     }
 
     .secEmail > input, .secSenha > input {
