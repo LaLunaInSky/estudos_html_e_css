@@ -17,7 +17,7 @@
         href="./src/output.css"
     >
     <title>
-        LaLunaInSky
+        HTML/CSS | LaLunaInSky
     </title>
 </head>
     <body
@@ -123,27 +123,31 @@
                     <!-- modulos -->
                     <div
                         class="
-                            bg-emerald-800/30 rounded-lg w-80 sm:w-120 overflow-hidden outline-2 outline-emerald-500/40
+                            bg-indigo-800/30 rounded-lg w-80 sm:w-120 overflow-hidden outline-4 outline-indigo-300/20
                         "
                     >
                         <h3
                             class="
-                                text-center bg-emerald-400/20 backdrop-blur-3xl pt-3 pb-2 font-black text-lg -mx-5 uppercase select-none
+                                text-center bg-indigo-400/20 backdrop-blur-3xl pt-3 pb-2 font-black text-lg -mx-5 uppercase select-none
                             "
                         >
                             Módulo 1
                         </h3>
                         <menu
                             class="
-                                flex *:font-bold *:text-emerald-100/80 *:cursor-pointer *:hover:bg-slate-100/20 *:w-1/2 *:text-center *:py-2 *:select-none *:hover:text-neutral-50 *:hover:underline *:hover:underline-offset-6
+                                flex *:font-bold *:text-indigo-100/80 *:cursor-pointer *:hover:bg-slate-100/20 *:w-1/2 *:text-center *:py-2 *:select-none *:hover:text-neutral-50 *:hover:underline *:hover:underline-offset-6
                             "
                         >
-                            <div>
+                            <div
+                                id="modulo_1_desafios_botao_mostrador"
+                            >
                                 <h4>
                                     Desafios
                                 </h4>
                             </div>
-                            <div>
+                            <div
+                                id="modulo_1_exercicios_botao_mostrador"
+                            >
                                 <h4>
                                     Exercícios
                                 </h4>
@@ -151,10 +155,29 @@
                         </menu>
                         <div
                             class="
-                                bg-emerald-300/50 h-30 hidden
+                                bg-indigo-300/50 h-30
                             "
                         >
-
+                            <div
+                                id="modulo_1_desafios_mostrador"
+                                class="
+                                    block
+                                "
+                            >
+                                <h5>
+                                    desafios
+                                </h5>
+                            </div>
+                            <div
+                                id="modulo_1_exercicios_mostrador"
+                                class="
+                                    hidden
+                                "
+                            >
+                                <h5>
+                                    exercícios
+                                </h5>
+                            </div>
                         </div>
                     </div>
                     <!-- extra -->
@@ -280,4 +303,5 @@
             </p>
         </footer>
     </body>
+    <script src="src/main.js"></script>
 </html>
