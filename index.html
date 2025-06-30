@@ -27,7 +27,7 @@
     >
         <header
             class="
-                bg-slate-900/70 backdrop-blur-3xl flex justify-center py-3 flex-col items-center fixed w-svw outline-4 outline-indigo-300/50 *:select-none
+                bg-slate-900/70 backdrop-blur-3xl flex justify-center py-3 flex-col items-center fixed w-svw outline-4 outline-indigo-300/50 *:select-none z-1
             "
         >
             <h1
@@ -117,58 +117,156 @@
                 </div>
                 <div
                     class="
-                        grid grid-cols-2 gap-5 mt-4
+                        grid grid-cols-1 mt-3 lg:grid-cols-2 gap-8
                     "
                 >
                     <!-- modulos -->
                     <div
                         class="
-                            bg-green-300
-                        "
-                    >
-                        <h3>
-                            Módulo 1
-                        </h3>
-                    </div>
-                    <div
-                        class="
-                            bg-green-300
+                            bg-emerald-800/30 rounded-lg w-80 sm:w-120 overflow-hidden outline-2 outline-emerald-500/40
                         "
                     >
                         <h3
                             class="
-                                text-neutral-50
+                                text-center bg-emerald-400/20 backdrop-blur-3xl pt-3 pb-2 font-black text-lg -mx-5 uppercase select-none
+                            "
+                        >
+                            Módulo 1
+                        </h3>
+                        <menu
+                            class="
+                                flex *:font-bold *:text-emerald-100/80 *:cursor-pointer *:hover:bg-slate-100/20 *:w-1/2 *:text-center *:py-2 *:select-none *:hover:text-neutral-50 *:hover:underline *:hover:underline-offset-6
+                            "
+                        >
+                            <div>
+                                <h4>
+                                    Desafios
+                                </h4>
+                            </div>
+                            <div>
+                                <h4>
+                                    Exercícios
+                                </h4>
+                            </div>
+                        </menu>
+                        <div
+                            class="
+                                bg-emerald-300/50 h-30 hidden
+                            "
+                        >
+
+                        </div>
+                    </div>
+                    <!-- extra -->
+                    <div
+                        class="
+                            bg-blue-800/30 rounded-lg w-80 sm:w-120 overflow-hidden outline-2 outline-blue-500/40
+                        "
+                    >
+                        <h3
+                            class="
+                                text-center bg-blue-400/20 backdrop-blur-3xl pt-3 pb-2 font-black text-lg -mx-5 uppercase select-none
                             "
                         >
                             Módulo 2
                         </h3>
+                        <menu
+                            class="
+                                flex *:font-bold *:text-blue-100/80 *:cursor-pointer *:hover:bg-slate-100/20 *:w-1/2 *:text-center *:py-2 *:select-none *:hover:text-neutral-50 *:hover:underline *:hover:underline-offset-6
+                            "
+                        >
+                            <div>
+                                <h4>
+                                    Desafios
+                                </h4>
+                            </div>
+                            <div>
+                                <h4>
+                                    Exercícios
+                                </h4>
+                            </div>
+                        </menu>
+                        <div
+                            class="
+                                bg-blue-300/50 h-30
+                            "
+                        >
+
+                        </div>
                     </div>
                     <div
                         class="
-                            bg-green-300
+                            bg-amber-800/30 rounded-lg w-80 sm:w-120 overflow-hidden outline-2 outline-amber-500/40
                         "
                     >
                         <h3
                             class="
-                                text-neutral-50
+                                text-center bg-amber-400/20 backdrop-blur-3xl pt-3 pb-2 font-black text-lg -mx-5 uppercase select-none
                             "
                         >
                             Módulo 3
                         </h3>
+                        <menu
+                            class="
+                                flex *:font-bold *:text-amber-100/80 *:cursor-pointer *:hover:bg-slate-100/20 *:w-1/2 *:text-center *:py-2 *:select-none *:hover:text-neutral-50 *:hover:underline *:hover:underline-offset-6
+                            "
+                        >
+                            <div>
+                                <h4>
+                                    Desafios
+                                </h4>
+                            </div>
+                            <div>
+                                <h4>
+                                    Exercícios
+                                </h4>
+                            </div>
+                        </menu>
+                        <div
+                            class="
+                                bg-amber-300/50 h-30
+                            "
+                        >
+
+                        </div>
                     </div>
                     <div
                         class="
-                            bg-green-300
+                            bg-purple-800/30 rounded-lg w-80 sm:w-120 overflow-hidden outline-2 outline-purple-500/40
                         "
                     >
                         <h3
                             class="
-                                text-neutral-50
+                                text-center bg-purple-400/20 backdrop-blur-3xl pt-3 pb-2 font-black text-lg -mx-5 uppercase select-none
                             "
                         >
                             Módulo 4
                         </h3>
+                        <menu
+                            class="
+                                flex *:font-bold *:text-purple-100/80 *:cursor-pointer *:hover:bg-slate-100/20 *:w-1/2 *:text-center *:py-2 *:select-none *:hover:text-neutral-50 *:hover:underline *:hover:underline-offset-6
+                            "
+                        >
+                            <div>
+                                <h4>
+                                    Desafios
+                                </h4>
+                            </div>
+                            <div>
+                                <h4>
+                                    Exercícios
+                                </h4>
+                            </div>
+                        </menu>
+                        <div
+                            class="
+                                bg-purple-300/50 h-30
+                            "
+                        >
+
+                        </div>
                     </div>
+                    <!-- fim extra -->
                 </div>
             </div>
         </main>
