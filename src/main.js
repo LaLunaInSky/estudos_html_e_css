@@ -10,11 +10,14 @@ const modulo_1_desafios_mostrador = document.querySelector("#modulo_1_desafios_m
 // Elemento do mostradpr de exercícios do modulo 1
 const modulo_1_exercicios_mostrador = document.querySelector("#modulo_1_exercicios_mostrador");
 
-// Adicionando um evento de clique no botão de desafios do modulo 1
+// Adiciona um evento de clique no botão de desafios do modulo 1
 modulo_1_desafios_botao_mostrador.addEventListener("click", abrir_mostrador_mod_01_desafios);
 
-// Adicionando um evento de clique no botão de exercícios do modulo 1
+// Adiciona um evento de clique no botão de exercícios do modulo 1
 modulo_1_exercicios_botao_mostrador.addEventListener("click", abrir_mostrador_mod_01_exercicios);
+
+// Difine a cor do botão clicado do modulo 1
+const cor_do_fundo_do_botao_do_mod_1 = "bg-indigo-300/50";
 
 // Função para deixar visivel o mostrador dos desafios, e esconder o mostrador dos exercícios
 function abrir_mostrador_mod_01_desafios() {
@@ -33,6 +36,9 @@ function abrir_mostrador_mod_01_desafios() {
 
         // Atribui o novo estilo a classe vazia do mostrador de exercícios
         modulo_1_exercicios_mostrador.setAttribute("class", novo_estilo_mod_1_exercicios);
+
+        // Remove o estilo de cor de fundo da classe do botão dos exercícios
+        modulo_1_exercicios_botao_mostrador.removeAttribute("class");
     }
 
     // 2º mostramos o mostrador de desafios, caso precise!!!
@@ -50,6 +56,9 @@ function abrir_mostrador_mod_01_desafios() {
 
         // Atribui o novo estilo a classe vazia do mostrador de desafios
         modulo_1_desafios_mostrador.setAttribute("class", novo_estilo_mod_1_desafios);
+
+        // Adiciona uma nova cor de fundo no botão de desafios
+        modulo_1_desafios_botao_mostrador.setAttribute("class", cor_do_fundo_do_botao_do_mod_1);
     }
 }
 
@@ -70,6 +79,9 @@ function abrir_mostrador_mod_01_exercicios() {
     
         // Atribui o novo estilo a classe vazia do mostrador de desafios
         modulo_1_desafios_mostrador.setAttribute("class", novo_estilo_mod_1_desafios);
+
+        // Remove o estilo de cor de fundo da classe do botão dos desafios
+        modulo_1_desafios_botao_mostrador.removeAttribute("class");
     }
 
 
@@ -88,6 +100,9 @@ function abrir_mostrador_mod_01_exercicios() {
     
         // Atribui o novo estilo a classe vazia do mostrador de exercícios
         modulo_1_exercicios_mostrador.setAttribute("class", novo_estilo_mod_1_exercicios);
+        
+        // Adiciona uma nova cor de fundo no botão de exercícios
+        modulo_1_exercicios_botao_mostrador.setAttribute("class", cor_do_fundo_do_botao_do_mod_1);
     }
 
 }   
