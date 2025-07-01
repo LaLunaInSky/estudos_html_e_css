@@ -144,3 +144,39 @@ function abrir_mostrador_do_modulo_selecionado_de_exercicios(evento) {
         modulos_exercicios_botoes_mostradores[número_do_index_do_botão_clicado].setAttribute("class", cores_de_fundo_dos_botoes_dos_modulos[número_do_index_do_botão_clicado]);
     }
 }
+
+
+const div_dentro_do_mostrador_de_desafios_do_modulo_1 = document.querySelector("#modulo_1_desafios");
+
+
+// Total de desafios!!
+let quantidade_de_desafios_dos_modulos = [
+    [], [], [], []
+];
+let desafio = 0;
+
+while (desafio < 17) {
+    desafio++;
+
+    if (desafio < 10) {
+        quantidade_de_desafios_dos_modulos[0].push(`d_00${desafio}`);
+    } else if (desafio < 11) {
+        quantidade_de_desafios_dos_modulos[1].push(`d_0${desafio}`);
+    } else if (desafio < 16) {
+        quantidade_de_desafios_dos_modulos[2].push(`d_0${desafio}`);
+    } else if (desafio < 18) {
+        quantidade_de_desafios_dos_modulos[3].push(`d_0${desafio}`);
+    }
+}
+
+console.log(quantidade_de_desafios_dos_modulos);
+
+// Total de exercícios!!
+let quantidade_de_exercicios_dos_modulos = [
+    [], [], [], []
+];
+let exercicio = 0;
+
+
+
+console.log(quantidade_de_exercicios_dos_modulos);
