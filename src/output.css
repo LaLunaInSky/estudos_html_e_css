@@ -284,9 +284,6 @@
   .table {
     display: table;
   }
-  .h-auto {
-    height: auto;
-  }
   .h-fit {
     height: fit-content;
   }
@@ -567,9 +564,6 @@
       background-color: color-mix(in oklab, var(--color-purple-800) 30%, transparent);
     }
   }
-  .bg-slate-500 {
-    background-color: var(--color-slate-500);
-  }
   .bg-slate-800 {
     background-color: var(--color-slate-800);
   }
@@ -587,9 +581,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-slate-900) 70%, transparent);
     }
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -809,19 +800,6 @@
       border-radius: var(--radius-md);
     }
   }
-  .\*\:bg-slate-800 {
-    :is(& > *) {
-      background-color: var(--color-slate-800);
-    }
-  }
-  .\*\:bg-slate-800\/30 {
-    :is(& > *) {
-      background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 30%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        background-color: color-mix(in oklab, var(--color-slate-800) 30%, transparent);
-      }
-    }
-  }
   .\*\:bg-slate-800\/40 {
     :is(& > *) {
       background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 40%, transparent);
@@ -830,14 +808,19 @@
       }
     }
   }
-  .\*\:px-1 {
-    :is(& > *) {
-      padding-inline: calc(var(--spacing) * 1);
-    }
-  }
   .\*\:px-2 {
     :is(& > *) {
       padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .\*\:px-3 {
+    :is(& > *) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .\*\:px-5 {
+    :is(& > *) {
+      padding-inline: calc(var(--spacing) * 5);
     }
   }
   .\*\:py-1 {
@@ -850,11 +833,6 @@
       padding-block: calc(var(--spacing) * 2);
     }
   }
-  .\*\:pt-1 {
-    :is(& > *) {
-      padding-top: calc(var(--spacing) * 1);
-    }
-  }
   .\*\:pt-1\.5 {
     :is(& > *) {
       padding-top: calc(var(--spacing) * 1.5);
@@ -863,11 +841,6 @@
   .\*\:pb-1 {
     :is(& > *) {
       padding-bottom: calc(var(--spacing) * 1);
-    }
-  }
-  .\*\:pb-2 {
-    :is(& > *) {
-      padding-bottom: calc(var(--spacing) * 2);
     }
   }
   .\*\:text-center {
@@ -932,57 +905,11 @@
       outline-width: 2px;
     }
   }
-  .\*\:outline-4 {
-    :is(& > *) {
-      outline-style: var(--tw-outline-style);
-      outline-width: 4px;
-    }
-  }
-  .\*\:outline-slate-200\/50 {
-    :is(& > *) {
-      outline-color: color-mix(in srgb, oklch(92.9% 0.013 255.508) 50%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        outline-color: color-mix(in oklab, var(--color-slate-200) 50%, transparent);
-      }
-    }
-  }
   .\*\:outline-slate-300\/40 {
     :is(& > *) {
       outline-color: color-mix(in srgb, oklch(86.9% 0.022 252.894) 40%, transparent);
       @supports (color: color-mix(in lab, red, red)) {
         outline-color: color-mix(in oklab, var(--color-slate-300) 40%, transparent);
-      }
-    }
-  }
-  .\*\:outline-slate-300\/50 {
-    :is(& > *) {
-      outline-color: color-mix(in srgb, oklch(86.9% 0.022 252.894) 50%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        outline-color: color-mix(in oklab, var(--color-slate-300) 50%, transparent);
-      }
-    }
-  }
-  .\*\:outline-slate-500\/30 {
-    :is(& > *) {
-      outline-color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 30%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        outline-color: color-mix(in oklab, var(--color-slate-500) 30%, transparent);
-      }
-    }
-  }
-  .\*\:outline-slate-500\/50 {
-    :is(& > *) {
-      outline-color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 50%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        outline-color: color-mix(in oklab, var(--color-slate-500) 50%, transparent);
-      }
-    }
-  }
-  .\*\:outline-slate-600\/50 {
-    :is(& > *) {
-      outline-color: color-mix(in srgb, oklch(44.6% 0.043 257.281) 50%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        outline-color: color-mix(in oklab, var(--color-slate-600) 50%, transparent);
       }
     }
   }
@@ -1076,18 +1003,6 @@
       }
     }
   }
-  .\*\:hover\:bg-slate-800\/70 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 70%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            background-color: color-mix(in oklab, var(--color-slate-800) 70%, transparent);
-          }
-        }
-      }
-    }
-  }
   .\*\:hover\:bg-slate-900\/70 {
     :is(& > *) {
       &:hover {
@@ -1139,44 +1054,12 @@
       }
     }
   }
-  .\*\:hover\:shadow-lg {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-          box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-        }
-      }
-    }
-  }
   .\*\:hover\:shadow-md {
     :is(& > *) {
       &:hover {
         @media (hover: hover) {
           --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
           box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-        }
-      }
-    }
-  }
-  .\*\:hover\:shadow-xl {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-          box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-        }
-      }
-    }
-  }
-  .\*\:hover\:shadow-black {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-shadow-color: #000;
-          @supports (color: color-mix(in lab, red, red)) {
-            --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
-          }
         }
       }
     }
@@ -1193,105 +1076,12 @@
       }
     }
   }
-  .\*\:hover\:shadow-black\/40 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          --tw-shadow-color: color-mix(in srgb, #000 40%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-black) 40%, transparent) var(--tw-shadow-alpha), transparent);
-          }
-        }
-      }
-    }
-  }
   .\*\:hover\:outline-2 {
     :is(& > *) {
       &:hover {
         @media (hover: hover) {
           outline-style: var(--tw-outline-style);
           outline-width: 2px;
-        }
-      }
-    }
-  }
-  .\*\:hover\:outline-slate-300\/40 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          outline-color: color-mix(in srgb, oklch(86.9% 0.022 252.894) 40%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            outline-color: color-mix(in oklab, var(--color-slate-300) 40%, transparent);
-          }
-        }
-      }
-    }
-  }
-  .\*\:hover\:outline-slate-400\/60 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          outline-color: color-mix(in srgb, oklch(70.4% 0.04 256.788) 60%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            outline-color: color-mix(in oklab, var(--color-slate-400) 60%, transparent);
-          }
-        }
-      }
-    }
-  }
-  .\*\:hover\:outline-slate-500 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          outline-color: var(--color-slate-500);
-        }
-      }
-    }
-  }
-  .\*\:hover\:outline-slate-500\/40 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          outline-color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 40%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            outline-color: color-mix(in oklab, var(--color-slate-500) 40%, transparent);
-          }
-        }
-      }
-    }
-  }
-  .\*\:hover\:outline-slate-500\/60 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          outline-color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 60%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            outline-color: color-mix(in oklab, var(--color-slate-500) 60%, transparent);
-          }
-        }
-      }
-    }
-  }
-  .\*\:hover\:outline-slate-600\/40 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          outline-color: color-mix(in srgb, oklch(44.6% 0.043 257.281) 40%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            outline-color: color-mix(in oklab, var(--color-slate-600) 40%, transparent);
-          }
-        }
-      }
-    }
-  }
-  .\*\:hover\:outline-slate-600\/60 {
-    :is(& > *) {
-      &:hover {
-        @media (hover: hover) {
-          outline-color: color-mix(in srgb, oklch(44.6% 0.043 257.281) 60%, transparent);
-          @supports (color: color-mix(in lab, red, red)) {
-            outline-color: color-mix(in oklab, var(--color-slate-600) 60%, transparent);
-          }
         }
       }
     }
@@ -1326,16 +1116,6 @@
   .sm\:w-120 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 120);
-    }
-  }
-  .sm\:px-3 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 3);
-    }
-  }
-  .sm\:px-4 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .sm\:px-5 {
