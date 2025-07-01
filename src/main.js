@@ -145,6 +145,8 @@ function abrir_mostrador_do_modulo_selecionado_de_exercicios(evento) {
     }
 }
 
+/// - ///
+
 // Elementos dos desafios dentro dos mostradores dos modulos
 const elementos_dos_mostradores_dos_modulos_de_desafios = [
     document.querySelector("#modulo_1_desafios"),
@@ -153,14 +155,15 @@ const elementos_dos_mostradores_dos_modulos_de_desafios = [
     document.querySelector("#modulo_4_desafios")
 ];
 
-const div_dentro_do_mostrador_de_desafios_do_modulo_1 = document.querySelector("#modulo_1_desafios");
-
 // Total de desafios!!
 let quantidade_de_desafios_dos_modulos = [
     [], [], [], []
 ];
+
+// Define o início da variavel desafio
 let desafio = 0;
 
+// Cria um loop com o total de desafios e distribui os mesmos em cada modulo de acordo com o nescessário
 while (desafio < 17) {
     desafio++;
 
@@ -175,6 +178,35 @@ while (desafio < 17) {
     }
 }
 
+// Adiconando os desafios em cada elemento dos desafios dentro dos mostradores dos modulos
+// Criando um map de cada elemento e mandando o mesmo elemento para uma funcção de distribuição
+elementos_dos_mostradores_dos_modulos_de_desafios.map(distribuidor_de_desafios_para_cada_elemento);
+
+// Uma função de distruição de desafios para cada elemento informado para a função
+function distribuidor_de_desafios_para_cada_elemento(elemento) {
+
+    // Armazena em uma variavel o número do modulo do elemento
+    const número_do_modulo = Number(elemento.getAttribute("id").replace("modulo_", "").replace("_desafios", "")) - 1;
+
+    // Cria um loop com o index de cada desafio baseado nos desafios armazenados na lista de quantidade_de_desafios_dos_modulos
+    for (index_desafio in quantidade_de_desafios_dos_modulos[número_do_modulo]) {
+
+        // Cria um novo elemento de um h5
+        const h5 = document.createElement("h5");
+        
+        // Cria um textNode para o h5 com o nome do desafio obtido da lista quantidade_de_desafios_dos_modulos puxado pelo index obtido no loop
+        const textNode_h5 = document.createTextNode(quantidade_de_desafios_dos_modulos[número_do_modulo][index_desafio]);
+
+        // Adiciona a viarivel textNode_h5 como um novo filho da variavel h5
+        h5.appendChild(textNode_h5);
+
+        // Adiciona a variavel h5 como novo filho do elemento
+        elemento.appendChild(h5);
+    }
+}
+
+/// - ///
+
 // Elementos dos exercícios dentro dos mostradores dos modulos
 const elementos_dos_mostradores_dos_modulos_de_exercicios = [
     document.querySelector("#modulo_1_exercicios"),
@@ -187,8 +219,11 @@ const elementos_dos_mostradores_dos_modulos_de_exercicios = [
 let quantidade_de_exercicios_dos_modulos = [
     [], [], [], []
 ];
+
+// Define o início da variavel exercicio
 let exercicio = 0;
 
+// Cria um loop com o total de exercícios e distribui os mesmos em cada modulo de acordo com o necessário
 while (exercicio < 72) {
     exercicio++;
 
@@ -200,5 +235,32 @@ while (exercicio < 72) {
         quantidade_de_exercicios_dos_modulos[2].push(`ex_0${exercicio}`);
     } else if (exercicio < 73) {
         quantidade_de_exercicios_dos_modulos[3].push(`ex_0${exercicio}`);
+    }
+}
+
+// Adicionando os exercícios em cada elemento dos exercícios dentro dos mostradores dos modulos
+// Criando um map de cada elemento e mandando o mesmo elemento para uma funcção de distribuição
+elementos_dos_mostradores_dos_modulos_de_exercicios.map(distribuidor_de_exercícios_para_cada_elemento)
+
+// Uma função de distruição de exercícios para cada elemento informado para a função
+function distribuidor_de_exercícios_para_cada_elemento(elemento) {
+    
+    // Armazena em uma variavel o número do modulo do elemento
+    const número_do_modulo = Number(elemento.getAttribute("id").replace("modulo_", "").replace("_exercicios", "")) - 1;
+    
+    // Cria um loop com o index de cada exercício baseado nos exercícios armazenados na lista de quantidade_de_exercicios_dos_modulos
+    for (index_exercicio in quantidade_de_exercicios_dos_modulos[número_do_modulo]) {
+
+        // Cria um novo elemento de um h5
+        const h5 = document.createElement("h5");
+
+        // Cria um textNode para o h5 com o nome do exercício obtido da lista quantidade_de_exercicios_dos_modulos puxado pelo index obtido no loop
+        const textNode_h5 = document.createTextNode(quantidade_de_exercicios_dos_modulos[número_do_modulo][index_exercicio]);
+
+        // Adiciona a viarivel textNode_h5 como um novo filho da variavel h5
+        h5.appendChild(textNode_h5);
+
+        // Adiciona a variavel h5 como novo filho do elemento
+        elemento.appendChild(h5);
     }
 }
