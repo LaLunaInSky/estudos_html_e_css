@@ -148,7 +148,6 @@ function abrir_mostrador_do_modulo_selecionado_de_exercicios(evento) {
 
 const div_dentro_do_mostrador_de_desafios_do_modulo_1 = document.querySelector("#modulo_1_desafios");
 
-
 // Total de desafios!!
 let quantidade_de_desafios_dos_modulos = [
     [], [], [], []
@@ -169,14 +168,22 @@ while (desafio < 17) {
     }
 }
 
-console.log(quantidade_de_desafios_dos_modulos);
-
 // Total de exercícios!!
 let quantidade_de_exercicios_dos_modulos = [
     [], [], [], []
 ];
 let exercicio = 0;
 
+while (exercicio < 72) {
+    exercicio++;
 
-
-console.log(quantidade_de_exercicios_dos_modulos);
+    if (exercicio < 23) {
+        quantidade_de_exercicios_dos_modulos[0].push(exercicio < 10 ? `ex_00${exercicio}`: `ex_0${exercicio}`)
+    } else if (exercicio < 37) {
+        quantidade_de_exercicios_dos_modulos[1].push(`ex_0${exercicio}`);
+    } else if (exercicio < 52) {
+        quantidade_de_exercicios_dos_modulos[2].push(`ex_0${exercicio}`);
+    } else if (exercicio < 73) {
+        quantidade_de_exercicios_dos_modulos[3].push(`ex_0${exercicio}`);
+    }
+}
