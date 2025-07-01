@@ -191,17 +191,23 @@ function distribuidor_de_desafios_para_cada_elemento(elemento) {
     // Cria um loop com o index de cada desafio baseado nos desafios armazenados na lista de quantidade_de_desafios_dos_modulos
     for (index_desafio in quantidade_de_desafios_dos_modulos[número_do_modulo]) {
 
-        // Cria um novo elemento de um h5
-        const h5 = document.createElement("h5");
+        // Cria um novo elemento de um a
+        const a = document.createElement("a");
         
-        // Cria um textNode para o h5 com o nome do desafio obtido da lista quantidade_de_desafios_dos_modulos puxado pelo index obtido no loop
-        const textNode_h5 = document.createTextNode(quantidade_de_desafios_dos_modulos[número_do_modulo][index_desafio]);
+        // Cria um textNode para o a com o nome do desafio obtido da lista quantidade_de_desafios_dos_modulos puxado pelo index obtido no loop
+        const textNode_a = document.createTextNode(quantidade_de_desafios_dos_modulos[número_do_modulo][index_desafio]);
 
-        // Adiciona a viarivel textNode_h5 como um novo filho da variavel h5
-        h5.appendChild(textNode_h5);
+        // Adiciona a viarivel textNode_h5 como um novo filho da variavel a
+        a.appendChild(textNode_a);
+
+        // Adiciona o href no a
+        a.setAttribute("href", `https://lalunainsky.com/estudos_html_e_css/estudos_iniciais/modulo_${número_do_modulo + 1}/desafios/${quantidade_de_desafios_dos_modulos[número_do_modulo][index_desafio]}/`);
+
+        // Adiciona o target no a
+        a.setAttribute("target", "_blank");
 
         // Adiciona a variavel h5 como novo filho do elemento
-        elemento.appendChild(h5);
+        elemento.appendChild(a);
     }
 }
 
@@ -251,16 +257,22 @@ function distribuidor_de_exercícios_para_cada_elemento(elemento) {
     // Cria um loop com o index de cada exercício baseado nos exercícios armazenados na lista de quantidade_de_exercicios_dos_modulos
     for (index_exercicio in quantidade_de_exercicios_dos_modulos[número_do_modulo]) {
 
-        // Cria um novo elemento de um h5
-        const h5 = document.createElement("h5");
+        // Cria um novo elemento de um a
+        const a = document.createElement("a");
 
-        // Cria um textNode para o h5 com o nome do exercício obtido da lista quantidade_de_exercicios_dos_modulos puxado pelo index obtido no loop
-        const textNode_h5 = document.createTextNode(quantidade_de_exercicios_dos_modulos[número_do_modulo][index_exercicio]);
+        // Cria um textNode para o a com o nome do exercício obtido da lista quantidade_de_exercicios_dos_modulos puxado pelo index obtido no loop
+        const textNode_a = document.createTextNode(quantidade_de_exercicios_dos_modulos[número_do_modulo][index_exercicio]);
 
-        // Adiciona a viarivel textNode_h5 como um novo filho da variavel h5
-        h5.appendChild(textNode_h5);
+        // Adiciona a viarivel textNode_h5 como um novo filho da variavel a
+        a.appendChild(textNode_a);
+
+        // Adiciona href no a
+        a.setAttribute("href", `https://lalunainsky.com/estudos_html_e_css/estudos_iniciais/modulo_${número_do_modulo + 1}/exercicios/${quantidade_de_exercicios_dos_modulos[número_do_modulo][index_exercicio]}/`);
+
+        // Adiciona target no a
+        a.setAttribute("target", "_blank");
 
         // Adiciona a variavel h5 como novo filho do elemento
-        elemento.appendChild(h5);
+        elemento.appendChild(a);
     }
 }
