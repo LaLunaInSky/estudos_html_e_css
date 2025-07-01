@@ -145,6 +145,13 @@ function abrir_mostrador_do_modulo_selecionado_de_exercicios(evento) {
     }
 }
 
+// Elementos dos desafios dentro dos mostradores dos modulos
+const elementos_dos_mostradores_dos_modulos_de_desafios = [
+    document.querySelector("#modulo_1_desafios"),
+    document.querySelector("#modulo_2_desafios"),
+    document.querySelector("#modulo_3_desafios"),
+    document.querySelector("#modulo_4_desafios")
+];
 
 const div_dentro_do_mostrador_de_desafios_do_modulo_1 = document.querySelector("#modulo_1_desafios");
 
@@ -167,6 +174,14 @@ while (desafio < 17) {
         quantidade_de_desafios_dos_modulos[3].push(`d_0${desafio}`);
     }
 }
+
+// Elementos dos exercícios dentro dos mostradores dos modulos
+const elementos_dos_mostradores_dos_modulos_de_exercicios = [
+    document.querySelector("#modulo_1_exercicios"),
+    document.querySelector("#modulo_2_exercicios"),
+    document.querySelector("#modulo_3_exercicios"),
+    document.querySelector("#modulo_4_exercicios")
+];
 
 // Total de exercícios!!
 let quantidade_de_exercicios_dos_modulos = [
